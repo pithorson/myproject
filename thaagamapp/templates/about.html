@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Our NGO Project</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #007BFF;
+        }
+        p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Our NGO Project</h1>
+    </header>
+
+    <nav>
+        <!-- Add navigation links here, if necessary -->
+    </nav>
+    <form action="{% url 'about' %}" method="post">
+        {% csrf_token %}
+
+    <main>
+        <section>
+            <h2>Our Mission</h2>
+            <p>
+                Insert a brief description of your NGO's mission and goals here. Explain the purpose and the impact you aim to achieve.
+            </p>
+        </section>
+
+        <section>
+            <h2>Our Team</h2>
+            <p>
+                Introduce key team members and their roles. Share their passion and dedication to the cause.
+            </p>
+        </section>
+
+        <section>
+            <h2>Our Projects</h2>
+            <p>
+                Highlight some of the major projects or initiatives your NGO is involved in. Discuss their importance and outcomes.
+            </p>
+        </section>
+
+        <section>
+            <h2>Get Involved</h2>
+            <p>
+                Encourage visitors to support your NGO by volunteering, donating, or getting involved in some way. Provide contact information or links for further information.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Add footer content here, e.g., contact information, social media links, etc. -->
+    </footer>
+</body>
+</html>
