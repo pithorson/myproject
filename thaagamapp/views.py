@@ -12,9 +12,9 @@ def contact(request):
         first_name = request.POST['firstname']
         last_name = request.POST['lastname']
         email = request.POST['email']
-        num = request.POST['num']
+        phone_number = request.POST['phone_number']
         subject = request.POST['subject']
-        user = User.objects.create(first_name=first_name,last_name=last_name,email=email,num=num,subject=subject)
+        user = User.objects.create(first_name=first_name,last_name=last_name,email=email,phone_number=phone_number,subject=subject)
         user.save()
         return render(request, "contact.html")
     else:
